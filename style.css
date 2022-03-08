@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	/*background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url(guess1.jpg);
+	background-color: #252839;*/
+	background-image: url("guess3.jpg");
+	background-blend-mode: lighten;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+
+}
+.top{margin-top: 15rem;
+	 margin-bottom: 5rem;	
+	 margin-left: 8rem;
+	 margin-right: 8rem;
+	}
+
+h2{
+	position: relative;
+	font-size: 10vw;
+	color:#252839 ;
+	-webkit-text-stroke: 0.3vw #383d52;
+	font-family: cursive;
+	
+}
+
+h2::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: white;
+	-webkit-text-stroke: 0vw #383d52;
+	/*border-right: 2px solid #01fe87;*/
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate{
+	0%,10%,100%{
+		width: 0;
+	}
+	70%,90%{
+		width:100%;
+	}
+}
+a{
+	position: relative;
+	display: inline-block;
+	color:#01fe87 ;
+	padding: 15px 30px;
+	letter-spacing: 6px;
+	text-decoration: none;
+	font-size: 30px;
+	overflow: hidden;
+	transition: 0.5s ease;
+	margin-left: 37rem;
+	margin-top: 3rem;
+}
+a:hover{
+	color:#383d52 ;
+	background-color:#01fe87 ;
+	box-shadow: 0 0 10px #01fe87, 0 0 40px #01fe87, 0 0 80px #01fe87;
+	transition: 0.5s ease;
+}
+p.click{
+	letter-spacing: 3px;
+	margin-left: 37rem;
+	color: white;
+	font-weight: bold;
+}
+
+.main{
+	/*background-color: black;*/
+	background-image: url("guess3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.cont{
+	margin: 5rem 10rem;
+	background-color: slategrey;
+	padding: 10rem 15rem;
+	border-radius: 10px;
+	height: 70vh;
+	box-shadow: 10px 10px 5px 0px black;
+}
+#ran{
+	height: 8vh;
+	width: 30%;
+	border-radius: 5px;
+	margin-right: 3rem;
+	text-align: center;
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 20px;
+}
+::placeholder{
+	text-align: center;
+}
+.check{
+	height: 5vh;
+	width: 30%;
+	border-radius: 5px;
+}
+.check:hover{
+	background-color: dimgray;
+	color: white;
+}
+.again{
+	background-color: black;
+	color: whitesmoke;
+	width: 25%;
+	height: 5vh;
+}
+.again:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+p.result{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 6rem;
+	font-size: 35px;
+	font-family: cursive;
+	font-weight: bold;
+}
